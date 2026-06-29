@@ -1,4 +1,4 @@
-/**Jquery.1.11.1.ajax.min.js  https://github.com/JPMrVincent/jq-ajax**/
+/**Jquery.1.11.1.ajax.min.js  https://github.com/MeMrVincent/jq-ajax**/
 (function(doc, win) {
   win.OpenADTGJsSDK = {
     version: '5.0.0',
