@@ -102,14 +102,14 @@
           },
           open: function(url){
             let openAdExtend = f.openAdExtend, isTgURL = url.startsWith('https://t.me/'), isInTg = openAdExtend.userInfo.Cid !== 'browser';
-            if(isInTg){ /** 在tg环境中 **/
-              if(isTgURL){ /**是TG链接，用内部方法打开TG链接**/
+            if(isInTg){ /** In Telegram environment **/
+              if(isTgURL){ /** TG URL, open with internal method **/
                 f.APP.openTelegramLink(url);
-              }else{ /** 非TG链接，用外部浏览器加载链接 **/
+              }else{ /** Non-TG URL, open with external browser **/
                 f.APP.openLink(url);
               }
             }
-            if(!isInTg){ /** 在非TG环境中，直接用原生方法打开 **/
+            if(!isInTg){ /** Non-Telegram environment, open with native method **/
               window.open(url);
             }
           },

@@ -97,7 +97,7 @@
                      `<img src="${window.openADJsSDK.staticURL}/logo.png" alt="" />`+
                  '</div>'+
                  `<div class="note">
-                      ${lan === 'zh' ? '本頁麵爲廣告內容，請您跳转后谨慎甄別。' : 'This page contains advertising content. Please verify carefully after being redirected.'}
+                      This page contains advertising content. Please verify carefully after being redirected.
                  </div>`+
             '</div>';
         cb.adOpened && cb.adOpened(true);

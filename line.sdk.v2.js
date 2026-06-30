@@ -56,11 +56,11 @@
       DOM: null,
       lan: 'en',
       zh: {
-        reward: '#S 後獲得獎勵',
-        risk: '本頁麵爲廣告內容，請您跳转后谨慎甄別。',
-        notice: '暫未獲得獎勵，是否繼續觀看廣告',
-        cancel: '放棄',
-        confirm: '繼續',
+        reward: 'Get reward after #S',
+        risk: 'This page contains advertising content. Please verify carefully after being redirected.',
+        notice: 'No rewards obtained yet. Do you want to continue watching ads?',
+        cancel: 'Give up',
+        confirm: 'Continue',
       },
       en: {
         reward: 'reward in # seconds',
@@ -602,12 +602,12 @@
                     win.OpenADLineJsSDK.interactive.GPT();
                   }
                   if (event.isEmpty) {
-                    return reject({ code: -303, msg: 'No GPT Ads Available !' }); // 广告为空，Promise 解析为 false
+                    return reject({ code: -303, msg: 'No GPT Ads Available !' }); // Ad is empty, Promise resolves to false
                   }
                 });
                 window.googletag.pubads().addEventListener('slotOnload', function (event) {
                   if (event.slot.getSlotElementId() !== $AD.dom) {
-                    return { code: -302, msg: `Failed To Find Html Element ${$AD.dom}` }; // 确保是当前广告位
+                    return { code: -302, msg: `Failed To Find Html Element ${$AD.dom}` }; // Ensure it is the current ad slot
                   }
                   if (!event.slot.getResponseInformation()) {
                     return reject({ code: -306, msg: 'GPT Ad Failed To Load Content !' });

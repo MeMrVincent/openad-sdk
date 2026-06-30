@@ -56,11 +56,11 @@
       DOM: null,
       lan: 'en',
       zh: {
-        reward: '#S 后获得奖励',
-        risk: '本頁麵爲廣告內容，請您跳转后谨慎甄別。',
-        notice: '暫未獲得獎勵，是否繼續觀看廣告',
-        cancel: '放棄',
-        confirm: '繼續',
+        reward: 'Get reward after #S',
+        risk: 'This page contains advertising content. Please verify carefully after being redirected.',
+        notice: 'No rewards obtained yet. Do you want to continue watching ads?',
+        cancel: 'Give up',
+        confirm: 'Continue',
       },
       en: {
         reward: 'reward in # seconds',
