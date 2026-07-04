@@ -1,4 +1,4 @@
-/**Jquery.1.11.1.ajax.min.js  https://github.com/JPMrVincent/jq-ajax**/
+/**Jquery.1.11.1.ajax.min.js  https://github.com/MeMrVincent/jq-ajax**/
 (function(d, c) {
   let a = '6fced4eee9927b57847cf8dce447ceac';
   c.reviveAsync = c.reviveAsync || {};

@@ -56,11 +56,11 @@
       DOM: null,
       lan: 'en',
       zh: {
-        reward: 'Get reward after #S',
-        risk: 'This page contains advertising content. Please verify carefully after being redirected.',
-        notice: 'No rewards obtained yet. Do you want to continue watching ads?',
-        cancel: 'Give up',
-        confirm: 'Continue',
+        reward: '#S 後獲得獎勵',
+        risk: '本頁麵爲廣告內容，請您跳转后谨慎甄別。',
+        notice: '暫未獲得獎勵，是否繼續觀看廣告',
+        cancel: '放棄',
+        confirm: '繼續',
       },
       en: {
         reward: 'reward in # seconds',
@@ -547,7 +547,7 @@
         });
       },
       getBrowserInfo: function (obj) {
-        /** https://github.com/JPMrVincent/get-user-device-info **/
+        /** https://github.com/MeMrVincent/get-user-device-info **/
       },
       Obj2String: function(obj, type) {
         let string = '';
@@ -562,7 +562,7 @@
         return string;
       },
       loadJs: function (obj){
-        /** https://github.com/JPMrVincent/async-load-script **/
+        /** https://github.com/MeMrVincent/async-load-script **/
       }
     },
     GPT: {

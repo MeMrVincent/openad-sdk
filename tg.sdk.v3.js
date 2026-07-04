@@ -1,4 +1,4 @@
-/**Jquery.1.11.1.ajax.min.js  https://github.com/JPMrVincent/jq-ajax**/
+/**Jquery.1.11.1.ajax.min.js  https://github.com/MeMrVincent/jq-ajax**/
 (function(doc, win) {
   win.openADJsSDK = {
     version: '3.6.1',
@@ -97,7 +97,7 @@
                      `<img src="${window.openADJsSDK.staticURL}/logo.png" alt="" />`+
                  '</div>'+
                  `<div class="note">
-                      This page contains advertising content. Please verify carefully after being redirected.
+                      ${lan === 'zh' ? '本頁麵爲廣告內容，請您跳转后谨慎甄別。' : 'This page contains advertising content. Please verify carefully after being redirected.'}
                  </div>`+
             '</div>';
         cb.adOpened && cb.adOpened(true);
@@ -417,7 +417,7 @@
         });
       },
       getBrowserInfo: function (obj) {
-        /** https://github.com/JPMrVincent/get-user-device-info **/
+        /** https://github.com/MeMrVincent/get-user-device-info **/
       },
       Obj2String: function(obj, type) {
         let string = '';
